@@ -3,84 +3,84 @@ $blue-green: #219ebcff;
 $prussian-blue: #023047ff;
 $honey-yellow: #ffb703ff;
 $orange: #fb8500ff;
-$orange-prussian-blue: darken(#023047,7%);
+$orange-prussian-blue: darken(#023047, 7%);
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  vertical-align: bottom;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    vertical-align: bottom;
 }
 /* ---- particles.js container ---- */
 #particles-js {
-  width: 100vw;
-  height: 100vh;
-  background-color: $prussian-blue;
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 50% 50%;
+    width: 100vw;
+    height: 100vh;
+    background-color: $prussian-blue;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
 }
 
 .jumbo {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  text-align: center;
-  flex-direction: column;
-  font-family: Inter;
-  position: absolute;
-  &__title {
-    font-weight: 900;
-    font-size: 2.5em;
-    background: -webkit-linear-gradient(90deg, $orange, $honey-yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  &__subtitle {
-    font-size: 1em;
-    width: 80%;
-    margin-top: 0.5rem;
-    color: $honey-yellow;
-    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
     text-align: center;
-    font-weight: 400;
-  }
+    flex-direction: column;
+    font-family: Inter;
+    position: absolute;
+    &__title {
+        font-weight: 900;
+        font-size: 2.5em;
+        background: -webkit-linear-gradient(90deg, $orange, $honey-yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-  &__date {
-    font-size: 1.1em;
-    font-weight: 700;
-    color: $honey-yellow;
-  }
+    &__subtitle {
+        font-size: 1em;
+        width: 80%;
+        margin-top: 0.5rem;
+        color: $honey-yellow;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-weight: 400;
+    }
 
-  &__cta {
-    appearance: none;
-    border: none;
-    outline: none;
-    width: 50%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 4px;
-    min-height: 40px;
-    font-size: 1em;
-    margin-top: 1rem;
-    letter-spacing: 0.5px;
-    color: $prussian-blue;
-    font-weight: 600;
-    background-color: $honey-yellow;
-  }
+    &__date {
+        font-size: 1.1em;
+        font-weight: 700;
+        color: $honey-yellow;
+    }
+
+    &__cta {
+        appearance: none;
+        border: none;
+        outline: none;
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-radius: 4px;
+        min-height: 40px;
+        font-size: 1em;
+        margin-top: 1rem;
+        letter-spacing: 0.5px;
+        color: $prussian-blue;
+        font-weight: 600;
+        background-color: $honey-yellow;
+    }
 }
 
-.about{
+.about {
     background-color: $honey-yellow;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -90,7 +90,7 @@ canvas {
     align-items: center;
     font-family: 'Inter';
 
-    &__title{
+    &__title {
         font-weight: 900;
         letter-spacing: 0.75px;
         text-align: center;
@@ -98,15 +98,15 @@ canvas {
         color: $prussian-blue;
     }
 
-    &__content{
+    &__content {
         width: 80%;
         text-align: center;
         margin-top: 1rem;
         font-weight: 300;
+        font-size: 1.2em;
         color: darken(#023047, 5);
     }
 }
-
 
 .timer {
     padding-top: 3rem;
@@ -152,110 +152,320 @@ canvas {
     visibility: hidden;
 }
 
-.tracks{
-  background-color: $orange;
-  font-family: 'Inter';
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  &__title{
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
-    font-weight: 900;
-    color: $orange-prussian-blue;
-  }
+.tracks {
+    background-color: $orange;
+    font-family: 'Inter';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &__title {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        color: $orange-prussian-blue;
+    }
 
-  &__container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-  &__track{
-    width: 80%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: $orange-prussian-blue;
-    border-radius: 1rem;
-  }
+    &__track {
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background-color: $orange-prussian-blue;
+        border-radius: 1rem;
+    }
 
-  &__track-title{
-    text-align: center;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: $orange;
-    font-size: 1.7em;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-weight: 800;
-  }
+    &__track-title {
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: $orange;
+        font-size: 1.7em;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 800;
+    }
 
-  &__track-subtitle{
-    text-align: center;
-    font-size: 1.5em;
-    color: $honey-yellow;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
+    &__track-subtitle {
+        text-align: center;
+        font-size: 1.5em;
+        color: $honey-yellow;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
 
-  &__img{
-    width: 100%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-  }
+    &__img {
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 
-  &__track-list{
-    list-style: none;
-    text-align: center;
-    margin-top: 1rem;
-    color: $light-cornflower-blue;
-    margin-bottom: 2rem;
-  }
+    &__track-list {
+        list-style: none;
+        text-align: center;
+        margin-top: 1rem;
+        color: $light-cornflower-blue;
+        margin-bottom: 2rem;
+    }
 
-  &__track-list-item{
-    font-size: 1.2em;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 0.75rem;
-  }
+    &__track-list-item {
+        font-size: 1.2em;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 0.75rem;
+    }
 }
 
-.guidelines{
-  background-color: $honey-yellow;
-  font-family: 'Inter';
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.guidelines {
+    background-color: $honey-yellow;
+    font-family: 'Inter';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
-  &__title{
-    font-size: 2em;
-    font-weight: 900;
-    text-align: center;
-    color: $prussian-blue;
-  }
+    &__title {
+        font-size: 2em;
+        font-weight: 900;
+        text-align: center;
+        color: $prussian-blue;
+    }
 
-  &__list{
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $orange-prussian-blue;
+    }
+
+    &__list-item {
+        margin-top: 1rem;
+        font-size: 1.2em;
+        width: 75%;
+        font-weight: 400;
+
+        a {
+            color: $prussian-blue;
+        }
+    }
+
+    &__list-item:first-of-type {
+        margin-top: 1.5rem;
+    }
+}
+
+.prizes {
+    background-color: $prussian-blue;
+    font-family: 'Inter';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: $orange-prussian-blue;
-  }
 
-  &__list-item{
-    margin-top: 1rem;
-    font-size: 1.2em;
-    width: 75%;
-    font-weight: 300;
-
-    a{
-      color: $prussian-blue;
+    &__title {
+        font-weight: 900;
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        color: $orange;
+        margin-bottom: 1rem;
     }
-  }
 
-  &__list-item:first-of-type{
-    margin-top: 1.5rem;
-  }
+    &__list {
+        width: 80%;
+    }
+
+    &__list-item {
+        margin-top: 1rem;
+        line-height: 1.75rem;
+        color: $honey-yellow;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+    &__list-item:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    &__certificates {
+        width: 80%;
+        color: $honey-yellow;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+}
+
+.resources {
+    background-color: $orange-prussian-blue;
+    font-family: 'Inter';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        color: $orange;
+    }
+
+    &__subtitle {
+        font-size: 1.5em;
+        color: $honey-yellow;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        width: 70%;
+        margin-top: 1rem;
+    }
+
+    &__list-item {
+        color: $light-cornflower-blue;
+        list-style: none;
+        margin-bottom: 2rem;
+
+        a {
+            color: $blue-green;
+
+            &:hover {
+                color: $light-cornflower-blue;
+            }
+        }
+    }
+
+    &__note {
+        color: $honey-yellow;
+        width: 80%;
+        font-weight: 700;
+    }
+}
+
+.register {
+    background-color: $honey-yellow;
+    font-family: 'Inter';
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        color: $prussian-blue;
+    }
+
+    &__tagline {
+        font-size: 1em;
+        width: 70%;
+        text-align: center;
+        color: $orange-prussian-blue;
+        font-weight: 400;
+        margin-top: 0.5rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        width: 70%;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 48px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 6px;
+        font-size: 1em;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 6px 0 #ffffff88;
+    }
+
+    &__submit {
+        width: 100%;
+        appearance: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: $prussian-blue;
+        border: 2px solid $prussian-blue;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.1em;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 6px;
+        margin-top: 1rem;
+        transition: all ease-in-out 300ms;
+
+        &:hover {
+            background-color: $prussian-blue;
+            color: $honey-yellow;
+            cursor: pointer;
+        }
+    }
+
+    &__buttons {
+        display: none;
+        margin-top: 2rem;
+        width: 70%;
+        margin-bottom: 2rem;
+        font-size: 1em;
+        text-align: center;
+        font-weight: 600;
+        color: $prussian-blue;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 100%;
+            height: 4rem;
+            text-align: center;
+            appearance: none;
+            border: none;
+            outline: none;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 2px solid $prussian-blue;
+            font-size: 1.1em;
+            color: $prussian-blue;
+            font-weight: 600;
+            transition: all ease-in-out 300ms;
+
+            &:hover {
+                background-color: $prussian-blue;
+                color: $honey-yellow;
+                cursor: pointer;
+            }
+        }
+        button:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 }
