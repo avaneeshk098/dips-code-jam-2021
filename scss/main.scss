@@ -12,6 +12,9 @@ $orange-prussian-blue: darken(#023047, 7%);
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: none;
+}
 canvas {
     display: block;
     position: absolute;
