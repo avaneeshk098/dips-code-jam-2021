@@ -91,6 +91,13 @@ setInterval(() => {
     }
 }, 1000)
 
+window.onload = () => {
+    if(localStorage.getItem('filled') === 'true'){
+        document.querySelector('.register__buttons').style.display = 'block'
+        document.querySelector('.register__form').style.display = 'none'
+    }
+}
+
 document.querySelector('.register__form').addEventListener('submit', e => {
     e.preventDefault()
     let email = document.querySelector('.register__email').value
@@ -126,6 +133,7 @@ document.querySelector('.register__form').addEventListener('submit', e => {
         )
         return false
     }
+    localStorage.setItem('filled', 'true')
     document.querySelector('.register__buttons').style.display = 'block'
     document.querySelector('.register__form').style.display = 'none'
 })

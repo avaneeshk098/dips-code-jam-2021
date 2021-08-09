@@ -76,16 +76,24 @@ canvas {
   border: none;
   outline: none;
   width: 50%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 4px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 6px;
   min-height: 40px;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-top: 1rem;
-  letter-spacing: 0.5px;
-  color: #023047ff;
+  color: #ffb703ff;
   font-weight: 600;
+  background-color: transparent;
+  border: 2px solid #ffb703ff;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.jumbo__cta:hover {
   background-color: #ffb703ff;
+  color: #023047ff;
+  cursor: pointer;
 }
 
 .about {
@@ -175,19 +183,6 @@ canvas {
   font-size: 1.5em;
   color: #fb8500ff;
   font-family: 'Inter';
-}
-
-@media screen and (min-width: 768px) {
-  .timer {
-    padding-bottom: 6rem;
-    padding-top: 6rem;
-  }
-  .timer__container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 .disabled {
@@ -573,5 +568,165 @@ canvas {
 
 .register__buttons button:last-of-type {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbo__cta {
+    width: 25%;
+  }
+  .timer {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+  .timer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .about__content {
+    text-align: left;
+    padding-left: 4rem;
+    width: 60%;
+  }
+  .tracks__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tracks__track {
+    width: 25%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .guidelines {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .guidelines__list {
+    width: 70%;
+  }
+  .prizes__title, .resources__title {
+    font-size: 3em;
+  }
+  .prizes__list, .resources__list {
+    list-style: none;
+    text-align: center;
+  }
+  .prizes__certificates, .resources__certificates {
+    text-align: center;
+  }
+  .prizes__note, .resources__note {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .prizes__subtitle, .resources__subtitle {
+    font-size: 2em;
+  }
+  .register__title {
+    font-size: 3em;
+  }
+  .register__tagline {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+  }
+  .register__input {
+    width: 70%;
+  }
+  .register__submit {
+    width: 70%;
+  }
+  .register__buttons {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbo__cta {
+    width: 15%;
+  }
+  .about {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .tracks {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .tracks__title {
+    font-size: 3em;
+    margin-bottom: 2rem;
+  }
+  .tracks__track {
+    width: 20%;
+  }
+  .guidelines {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .guidelines__title {
+    font-size: 3em;
+  }
+  .guidelines__list {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .prizes, .resources {
+    padding: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .prizes__title, .resources__title {
+    font-size: 3em;
+  }
+  .prizes__list, .resources__list {
+    list-style: none;
+    text-align: center;
+  }
+  .prizes__certificates, .resources__certificates {
+    text-align: center;
+  }
+  .prizes__note, .resources__note {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .prizes__subtitle, .resources__subtitle {
+    font-size: 2em;
+  }
+  .register {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .register__input {
+    width: 30%;
+  }
+  .register__submit {
+    width: 30%;
+  }
+  .register__buttons {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
