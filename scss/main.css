@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 canvas {
@@ -574,6 +574,52 @@ canvas {
 
 .register__buttons button:last-of-type {
   margin-bottom: 0;
+}
+
+.footer {
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter";
+  background-color: #023047ff;
+}
+
+.footer__title {
+  font-weight: 900;
+  font-size: 2.5em;
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, #fb8500ff, #ffb703ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__date {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 1rem;
+  color: #ffb703ff;
+}
+
+.footer__credits {
+  margin-top: 1.5rem;
+  font-weight: 400;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.9em;
+  text-align: center;
+  color: #ffb703ff;
 }
 
 @media screen and (min-width: 768px) {

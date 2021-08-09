@@ -13,7 +13,7 @@ $orange-prussian-blue: darken(#023047, 7%);
     box-sizing: border-box;
 }
 body{
-    overflow-x: none;
+    overflow-x: hidden;
 }
 canvas {
     display: block;
@@ -469,6 +469,40 @@ canvas {
         button:last-of-type {
             margin-bottom: 0;
         }
+    }
+}
+
+.footer {
+    padding-bottom: 4rem;
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    background-color: $prussian-blue;
+    &__title {
+        font-weight: 900;
+        font-size: 2.5em;
+        text-align: center;
+        background: -webkit-linear-gradient(90deg, $orange, $honey-yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__date {
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 1rem;
+        color: $honey-yellow;
+    }
+    &__credits {
+        margin-top: 1.5rem;
+        font-weight: 400;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.9em;
+        text-align: center;
+        color: $honey-yellow;
     }
 }
 
