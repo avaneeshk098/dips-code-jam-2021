@@ -198,22 +198,19 @@ document.querySelector('.register__form').addEventListener('submit', e => {
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(TextPlugin)
 
-gsap.timeline().from('.about', {
+gsap.from('.about', {
     scrollTrigger: {
         trigger: '.about',
         start: 'top bottom',
         end: 'bottom bottom',
         scrub: true,
-        markers: true,
     },
     x: '100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
-gsap.timeline().from('.timer', {
+gsap.from('.timer', {
     scrollTrigger: {
         trigger: '.timer',
         start: 'top bottom',
@@ -223,8 +220,6 @@ gsap.timeline().from('.timer', {
     x: '-100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
 gsap.timeline().to('#title', {
@@ -236,7 +231,7 @@ gsap.timeline().to('#title', {
 })
 
 gsap.timeline().to('#jumbo-title', {
-    text: 'DiPS Coding Jam',
+    text: 'DiPS Code Jam',
     duration: 4,
     repeat: -1,
     repeatDelay: 1,
@@ -275,7 +270,7 @@ gsap.timeline().to('#register-title', {
     yoyo: true,
 })
 
-gsap.timeline().from('#senior', {
+gsap.from('#senior', {
     scrollTrigger: {
         trigger: '.tracks',
         start: 'top bottom',
@@ -285,11 +280,9 @@ gsap.timeline().from('#senior', {
     x: '-200%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
-gsap.timeline().from('#junior', {
+gsap.from('#junior', {
     scrollTrigger: {
         trigger: '.tracks',
         start: 'top bottom',
@@ -299,11 +292,9 @@ gsap.timeline().from('#junior', {
     x: '200%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
-gsap.timeline().from('.guidelines', {
+gsap.from('.guidelines', {
     scrollTrigger: {
         trigger: '.guidelines',
         start: 'top bottom',
@@ -313,11 +304,9 @@ gsap.timeline().from('.guidelines', {
     x: '-100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
-gsap.timeline().from('.prizes', {
+gsap.from('.prizes', {
     scrollTrigger: {
         trigger: '.prizes',
         start: 'top bottom',
@@ -327,6 +316,4 @@ gsap.timeline().from('.prizes', {
     x: '100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })

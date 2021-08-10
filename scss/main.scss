@@ -705,3 +705,17 @@ canvas {
         }
     }
 }
+
+@media screen and (max-width: 367px) {
+    .jumbo {
+        &__title {
+            font-size: 1.75em;
+        }
+    }
+
+    .footer {
+        &__title {
+            font-size: 1.75em;
+        }
+    }
+}

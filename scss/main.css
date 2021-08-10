@@ -825,4 +825,13 @@ canvas {
     width: 30%;
   }
 }
+
+@media screen and (max-width: 367px) {
+  .jumbo__title {
+    font-size: 1.75em;
+  }
+  .footer__title {
+    font-size: 1.75em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
