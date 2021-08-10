@@ -221,7 +221,6 @@ canvas {
 
 .tracks__title {
   font-size: 2em;
-  width: 100%;
   text-align: center;
   font-weight: 900;
   color: #011924;
@@ -293,6 +292,19 @@ canvas {
   margin-bottom: 0.75rem;
 }
 
+.tracks__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .guidelines {
   background-color: #ffb703ff;
   font-family: 'Inter';
@@ -362,7 +374,6 @@ canvas {
 .prizes__title {
   font-weight: 900;
   font-size: 2em;
-  width: 100%;
   text-align: center;
   color: #fb8500ff;
   margin-bottom: 1rem;
@@ -413,7 +424,6 @@ canvas {
 
 .resources__title {
   font-size: 2em;
-  width: 100%;
   text-align: center;
   font-weight: 900;
   color: #fb8500ff;
@@ -473,7 +483,6 @@ canvas {
 
 .register__title {
   font-size: 2em;
-  width: 100%;
   text-align: center;
   font-weight: 900;
   color: #023047ff;
@@ -673,6 +682,9 @@ canvas {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .tracks__title {
+    font-size: 3em;
+  }
   .tracks__track {
     width: 25%;
     margin-left: 2rem;
@@ -692,6 +704,9 @@ canvas {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .guidelines__title {
+    font-size: 3em;
   }
   .guidelines__list {
     width: 70%;

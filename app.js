@@ -1,3 +1,5 @@
+// particles.js
+
 particlesJS('particles-js', {
     particles: {
         number: { value: 200, density: { enable: true, value_area: 1500 } },
@@ -65,6 +67,7 @@ particlesJS('particles-js', {
     retina_detect: true,
 })
 
+// timer
 let currDate = new Date()
 let eventDate = new Date(2021, 7, 21, 10, 0, 0)
 setInterval(() => {
@@ -91,6 +94,7 @@ setInterval(() => {
     }
 }, 1000)
 
+// form submission
 window.onload = () => {
     if (localStorage.getItem('filled') === 'true') {
         document.querySelector('.register__buttons').style.display = 'block'
@@ -188,4 +192,141 @@ document.querySelector('.register__form').addEventListener('submit', e => {
             }
         })
         .catch(error => console.error(error))
+})
+
+// animations
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(TextPlugin)
+
+gsap.timeline().from('.about', {
+    scrollTrigger: {
+        trigger: '.about',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+        markers: true,
+    },
+    x: '100%',
+    opacity: 0,
+    duration: 4,
+    scrub: true,
+    markers: true,
+})
+
+gsap.timeline().from('.timer', {
+    scrollTrigger: {
+        trigger: '.timer',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+    },
+    x: '-100%',
+    opacity: 0,
+    duration: 4,
+    scrub: true,
+    markers: true,
+})
+
+gsap.timeline().to('#title', {
+    text: 'Tracks',
+    duration: 2,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
+})
+
+gsap.timeline().to('#jumbo-title', {
+    text: 'DiPS Coding Jam',
+    duration: 4,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
+})
+
+gsap.timeline().to('#guidelines-title', {
+    text: 'Guidelines',
+    duration: 2,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
+})
+
+gsap.timeline().to('#prizes-title', {
+    text: 'Prizes',
+    duration: 2,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
+})
+
+gsap.timeline().to('#resources-title', {
+    text: 'Resources',
+    duration: 2,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
+})
+
+gsap.timeline().to('#register-title', {
+    text: 'Register',
+    duration: 2,
+    repeat: -1,
+    repeatDelay: 1,
+    yoyo: true,
+})
+
+gsap.timeline().from('#senior', {
+    scrollTrigger: {
+        trigger: '.tracks',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+    },
+    x: '-200%',
+    opacity: 0,
+    duration: 4,
+    scrub: true,
+    markers: true,
+})
+
+gsap.timeline().from('#junior', {
+    scrollTrigger: {
+        trigger: '.tracks',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+    },
+    x: '200%',
+    opacity: 0,
+    duration: 4,
+    scrub: true,
+    markers: true,
+})
+
+gsap.timeline().from('.guidelines', {
+    scrollTrigger: {
+        trigger: '.guidelines',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+    },
+    x: '-100%',
+    opacity: 0,
+    duration: 4,
+    scrub: true,
+    markers: true,
+})
+
+gsap.timeline().from('.prizes', {
+    scrollTrigger: {
+        trigger: '.prizes',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+    },
+    x: '100%',
+    opacity: 0,
+    duration: 4,
+    scrub: true,
+    markers: true,
 })

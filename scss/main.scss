@@ -174,7 +174,6 @@ canvas {
     padding-bottom: 3rem;
     &__title {
         font-size: 2em;
-        width: 100%;
         text-align: center;
         font-weight: 900;
         color: $orange-prussian-blue;
@@ -236,6 +235,13 @@ canvas {
         padding-right: 8px;
         margin-bottom: 0.75rem;
     }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .guidelines {
@@ -288,7 +294,6 @@ canvas {
     &__title {
         font-weight: 900;
         font-size: 2em;
-        width: 100%;
         text-align: center;
         color: $orange;
         margin-bottom: 1rem;
@@ -330,7 +335,6 @@ canvas {
 
     &__title {
         font-size: 2em;
-        width: 100%;
         text-align: center;
         font-weight: 900;
         color: $orange;
@@ -381,7 +385,6 @@ canvas {
 
     &__title {
         font-size: 2em;
-        width: 100%;
         text-align: center;
         font-weight: 900;
         color: $prussian-blue;
@@ -549,6 +552,9 @@ canvas {
         &__container {
             flex-direction: row;
         }
+        &__title {
+            font-size: 3em;
+        }
         &__track {
             width: 25%;
             margin-left: 2rem;
@@ -561,6 +567,10 @@ canvas {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        &__title {
+            font-size: 3em;
+        }
 
         &__list {
             width: 70%;
