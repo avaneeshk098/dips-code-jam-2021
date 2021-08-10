@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -85,10 +89,7 @@ canvas {
   padding-bottom: 1rem;
   border-radius: 6px;
   min-height: 40px;
-  font-size: 1.1em;
   margin-top: 1rem;
-  color: #ffb703ff;
-  font-weight: 600;
   background-color: transparent;
   border: 2px solid #ffb703ff;
   -webkit-transition: all ease-in-out 500ms;
@@ -99,6 +100,23 @@ canvas {
   background-color: #ffb703ff;
   color: #023047ff;
   cursor: pointer;
+}
+
+.jumbo__cta:hover button {
+  cursor: pointer;
+  color: #023047ff;
+}
+
+.jumbo__btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  color: #ffb703ff;
+  font-weight: 600;
+  background: transparent;
 }
 
 .about {
@@ -592,7 +610,7 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Inter";
+  font-family: 'Inter';
   background-color: #023047ff;
 }
 
@@ -678,21 +696,26 @@ canvas {
   .guidelines__list {
     width: 70%;
   }
-  .prizes__title, .resources__title {
+  .prizes__title,
+  .resources__title {
     font-size: 3em;
   }
-  .prizes__list, .resources__list {
+  .prizes__list,
+  .resources__list {
     list-style: none;
     text-align: center;
   }
-  .prizes__certificates, .resources__certificates {
+  .prizes__certificates,
+  .resources__certificates {
     text-align: center;
   }
-  .prizes__note, .resources__note {
+  .prizes__note,
+  .resources__note {
     text-align: center;
     font-size: 1.5em;
   }
-  .prizes__subtitle, .resources__subtitle {
+  .prizes__subtitle,
+  .resources__subtitle {
     font-size: 2em;
   }
   .register__title {
@@ -745,26 +768,32 @@ canvas {
     width: 50%;
     margin-top: 1rem;
   }
-  .prizes, .resources {
+  .prizes,
+  .resources {
     padding: 0;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  .prizes__title, .resources__title {
+  .prizes__title,
+  .resources__title {
     font-size: 3em;
   }
-  .prizes__list, .resources__list {
+  .prizes__list,
+  .resources__list {
     list-style: none;
     text-align: center;
   }
-  .prizes__certificates, .resources__certificates {
+  .prizes__certificates,
+  .resources__certificates {
     text-align: center;
   }
-  .prizes__note, .resources__note {
+  .prizes__note,
+  .resources__note {
     text-align: center;
     font-size: 1.5em;
   }
-  .prizes__subtitle, .resources__subtitle {
+  .prizes__subtitle,
+  .resources__subtitle {
     font-size: 2em;
   }
   .register {

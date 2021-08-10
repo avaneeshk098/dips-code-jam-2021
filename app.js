@@ -92,7 +92,7 @@ setInterval(() => {
 }, 1000)
 
 window.onload = () => {
-    if(localStorage.getItem('filled') === 'true'){
+    if (localStorage.getItem('filled') === 'true') {
         document.querySelector('.register__buttons').style.display = 'block'
         document.querySelector('.register__form').style.display = 'none'
     }
@@ -133,7 +133,59 @@ document.querySelector('.register__form').addEventListener('submit', e => {
         )
         return false
     }
-    localStorage.setItem('filled', 'true')
-    document.querySelector('.register__buttons').style.display = 'block'
-    document.querySelector('.register__form').style.display = 'none'
+    fetch('https://it-council-api1.herokuapp.com/codingRegistration', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            class: grade,
+            branch: branch,
+        }),
+    })
+        .then(response => {
+            if (response.status === 200) {
+                localStorage.setItem('filled', 'true')
+                document.querySelector('.register__buttons').style.display =
+                    'block'
+                document.querySelector('.register__form').style.display = 'none'
+            } else {
+                fetch(
+                    'https://it-council-api2.herokuapp.com/codingRegistration',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            class: grade,
+                            branch: branch,
+                        }),
+                    },
+                )
+                    .then(response => {
+                        if (response.status === 200) {
+                            localStorage.setItem('filled', 'true')
+                            document.querySelector(
+                                '.register__buttons',
+                            ).style.display = 'block'
+                            document.querySelector(
+                                '.register__form',
+                            ).style.display = 'none'
+                        } else {
+                            alert(
+                                'There was an issue while adding your registration. Please fill the form again in a while and submit.',
+                            )
+                        }
+                    })
+                    .catch(error => console.error(error))
+            }
+        })
+        .catch(error => console.error(error))
 })

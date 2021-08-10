@@ -12,7 +12,10 @@ $orange-prussian-blue: darken(#023047, 7%);
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html {
+    scroll-behavior: smooth;
+}
+body {
     overflow-x: hidden;
 }
 canvas {
@@ -76,18 +79,29 @@ canvas {
         padding-bottom: 1rem;
         border-radius: 6px;
         min-height: 40px;
-        font-size: 1.1em;
         margin-top: 1rem;
-        color: $honey-yellow;
-        font-weight: 600;
         background-color: transparent;
         border: 2px solid $honey-yellow;
         transition: all ease-in-out 500ms;
-        &:hover{
+        &:hover {
             background-color: $honey-yellow;
             color: $prussian-blue;
             cursor: pointer;
+            button {
+                cursor: pointer;
+                color: $prussian-blue;
+            }
         }
+    }
+
+    &__btn {
+        appearance: none;
+        border: none;
+        outline: none;
+        font-size: 1.1em;
+        color: $honey-yellow;
+        font-weight: 600;
+        background: transparent;
     }
 }
 
@@ -479,7 +493,7 @@ canvas {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Inter";
+    font-family: 'Inter';
     background-color: $prussian-blue;
     &__title {
         font-weight: 900;
@@ -507,8 +521,8 @@ canvas {
 }
 
 @media screen and (min-width: 768px) {
-    .jumbo{
-        &__cta{
+    .jumbo {
+        &__cta {
             width: 25%;
         }
     }
@@ -520,162 +534,163 @@ canvas {
         }
     }
 
-    .about{
+    .about {
         flex-direction: row;
         padding-left: 5%;
         padding-right: 5%;
-        &__content{
+        &__content {
             text-align: left;
             padding-left: 4rem;
             width: 60%;
         }
     }
 
-    .tracks{
-        &__container{
+    .tracks {
+        &__container {
             flex-direction: row;
-
         }
-        &__track{
+        &__track {
             width: 25%;
             margin-left: 2rem;
             margin-right: 2rem;
         }
     }
 
-    .guidelines{
+    .guidelines {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        &__list{
+        &__list {
             width: 70%;
         }
     }
 
-    .prizes, .resources{
-        &__title{
+    .prizes,
+    .resources {
+        &__title {
             font-size: 3em;
         }
 
-        &__list{
+        &__list {
             list-style: none;
             text-align: center;
         }
-        &__certificates{
+        &__certificates {
             text-align: center;
         }
 
-        &__note{
+        &__note {
             text-align: center;
             font-size: 1.5em;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 2em;
         }
     }
 
-    .register{
-        &__title{
+    .register {
+        &__title {
             font-size: 3em;
         }
 
-        &__tagline{
+        &__tagline {
             font-size: 1.2em;
             margin-bottom: 1rem;
         }
-        &__input{
+        &__input {
             width: 70%;
         }
-        &__submit{
+        &__submit {
             width: 70%;
         }
-        &__buttons{
+        &__buttons {
             width: 70%;
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .jumbo{
-        &__cta{
+    .jumbo {
+        &__cta {
             width: 15%;
         }
     }
 
-    .about{
+    .about {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
 
-    .tracks{
+    .tracks {
         padding-top: 5rem;
         padding-bottom: 5rem;
 
-        &__title{
+        &__title {
             font-size: 3em;
             margin-bottom: 2rem;
         }
 
-        &__track{
+        &__track {
             width: 20%;
         }
     }
 
-    .guidelines{
+    .guidelines {
         padding-top: 5rem;
         padding-bottom: 5rem;
-        &__title{
+        &__title {
             font-size: 3em;
         }
 
-        &__list{
+        &__list {
             width: 50%;
             margin-top: 1rem;
         }
     }
 
-    .prizes, .resources{
+    .prizes,
+    .resources {
         padding: 0;
         padding-top: 5rem;
         padding-bottom: 5rem;
 
-        &__title{
+        &__title {
             font-size: 3em;
         }
 
-        &__list{
+        &__list {
             list-style: none;
             text-align: center;
         }
-        &__certificates{
+        &__certificates {
             text-align: center;
         }
 
-        &__note{
+        &__note {
             text-align: center;
             font-size: 1.5em;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 2em;
         }
     }
 
-    .register{
+    .register {
         padding-top: 5rem;
         padding-bottom: 5rem;
-        &__input{
+        &__input {
             width: 30%;
         }
-        &__submit{
+        &__submit {
             width: 30%;
         }
-        &__buttons{
+        &__buttons {
             width: 30%;
         }
     }

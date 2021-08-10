@@ -1,285 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./scss/main.css" rel="stylesheet" />
+        <title>DiPS Coding Jam | Home</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./scss/main.css" rel="stylesheet" />
-    <title>DiPS Coding Jam | Home</title>
-</head>
-
-<body>
-    <!-- particles.js container -->
-    <div id="particles-js">
-        <div class="jumbo">
-            <h1 class="jumbo__title">DiPS Coding Jam</h1>
-            <h6 class="jumbo__subtitle">
-                DiPS Coding Jam will be the first, one of its kind
-                programming fest ever hosted by DPS Bangalore South.
-            </h6>
-            <h6 class="jumbo__date">21<sup>st</sup> August 2021</h6>
-            <button class="jumbo__cta">Register</button>
-        </div>
-    </div>
-    <section class="about">
-        <h1 class="about__title">About DiPS Coding Jam</h1>
-        <p class="about__content">
-            DiPS Coding Jam will be the first, one of its kind programming
-            fest ever hosted by DPS Bangalore South.
-            <br /><br />
-
-            We believe that this contest will enable contestants to develop
-            their problem-solving and analytical skills. Participants will
-            also develop their logic-building and time management skills,
-            and this competition will surely provide a competitive edge to
-            the students as they begin to enter these coding fests at an
-            early age.
-        </p>
-    </section>
-    <!--timer-->
-    <section class="timer">
-        <div class="timer__container">
-            <div class="timer__days">
-                <h4 class="timer__daysn" id="days">0</h4>
-                <h6 class="timer__daysd">Days</h6>
-            </div>
-            <div class="timer__days">
-                <h4 class="timer__daysn" id="hours">0</h4>
-                <h6 class="timer__daysd">Hours</h6>
-            </div>
-            <div class="timer__days">
-                <h4 class="timer__daysn" id="minutes">0</h4>
-                <h6 class="timer__daysd">Minutes</h6>
-            </div>
-            <div class="timer__days">
-                <h4 class="timer__daysn" id="seconds">0</h4>
-                <h6 class="timer__daysd">Seconds</h6>
+    <body>
+        <!-- particles.js container -->
+        <div id="particles-js">
+            <div class="jumbo">
+                <h1 class="jumbo__title">DiPS Coding Jam</h1>
+                <h6 class="jumbo__subtitle">
+                    DiPS Coding Jam will be the first, one of its kind
+                    programming fest ever hosted by DPS Bangalore South.
+                </h6>
+                <h6 class="jumbo__date">21<sup>st</sup> August 2021</h6>
+                <a href="./#register" class="jumbo__cta"
+                    ><button class="jumbo__btn">Register</button></a
+                >
             </div>
         </div>
-    </section>
-    <!-- tracks -->
-    <section class="tracks">
-        <h1 class="tracks__title">Tracks</h1>
-        <div class="tracks__container">
-            <div class="tracks__track">
-                <img class="tracks__img" src="./img/senior-track.png" alt="Senior Track" />
-                <h1 class="tracks__track-title">Senior (Class 9 - 12)</h1>
-                <h6 class="tracks__track-subtitle">Topics</h6>
-                <ul class="tracks__track-list">
-                    <li class="tracks__track-list-item">
-                        Dynamic Prgramming
-                    </li>
-                    <li class="tracks__track-list-item">
-                        Graph Algorithms
-                    </li>
-                    <li class="tracks__track-list-item">
-                        Greedy Algorithms
-                    </li>
-                    <li class="tracks__track-list-item">
-                        Bitwise Manipulations
-                    </li>
-                    <li class="tracks__track-list-item">Combinatorics</li>
-                </ul>
-            </div>
-            <div class="tracks__track">
-                <img class="tracks__img" src="./img/junior-track.png" alt="Junior Track" />
-                <h1 class="tracks__track-title">Junior (Class 6 - 8)</h1>
-                <h6 class="tracks__track-subtitle">Topics</h6>
-                <ul class="tracks__track-list">
-                    <li class="tracks__track-list-item">Implementation</li>
-                    <li class="tracks__track-list-item">Binary Search</li>
-                    <li class="tracks__track-list-item">Brute Force</li>
-                    <li class="tracks__track-list-item">
-                        Greedy Algorithms
-                    </li>
-                    <li class="tracks__track-list-item">
-                        Constructive Algorithms
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- guidelines -->
-    <section class="guidelines">
-        <h1 class="guidelines__title">Guidelines</h1>
-        <ul class="guidelines__list">
-            <li class="guidelines__list-item">
-                The competition will be held on
-                <a href="https://codingal.com">Codingal</a> platform.
-            </li>
-            <li class="guidelines__list-item">
-                Time of the competition is: 11:00am to 1:00pm
-            </li>
-            <li class="guidelines__list-item">
-                You will get <b>10 coding problems</b> to solve in 2 hours
-                using either <b>C, C++, Java, or Python.</b>
-            </li>
+        <section class="about" id="about">
+            <h1 class="about__title">About DiPS Coding Jam</h1>
+            <p class="about__content">
+                DiPS Coding Jam will be the first, one of its kind programming
+                fest ever hosted by DPS Bangalore South.
+                <br /><br />
 
-            <li class="guidelines__list-item">
-                Each problem statement will have points associated with it.
-            </li>
-            <li class="guidelines__list-item">
-                Points increase as problems get more difficult.
-            </li>
-            <li class="guidelines__list-item">
-                The leaderboard will be updated in real-time and the student
-                with the highest point will be the winner.
-            </li>
-
-            <li class="guidelines__list-item">
-                This competition is for <b>DPS Bangalore schools only.</b>
-            </li>
-        </ul>
-    </section>
-    <!-- prizes -->
-    <section class="prizes">
-        <h1 class="prizes__title">Prizes</h1>
-        <ul class="prizes__list">
-            <li class="prizes__list-item">
-                Winner Prize <br />
-                <b>INR 1000 for each track</b>
-            </li>
-            <li class="prizes__list-item">
-                1st Runner Up Prize <br />
-                <b>INR 750 for each track</b>
-            </li>
-            <li class="prizes__list-item">
-                2nd Runner Up Prize <br />
-                <b>INR 500 for each track</b>
-            </li>
-        </ul>
-        <p class="prizes__certificates">
-            All participants with a score above "0" on the leaderboard will
-            get a rank certificate.
-        </p>
-    </section>
-    <!-- resources -->
-    <section class="resources">
-        <h1 class="resources__title">Resources</h1>
-        <h3 class="resources__subtitle">Senior</h3>
-        <ul class="resources__list">
-            <li class="resources__list-item">
-                Asymptotic Complexity:
-                <a
-                    href="https://www.geeksforgeeks.org/knowing-the-complexity-in-competitive-programming/">GeeksForGeeks</a>
-            </li>
-            <li class="resources__list-item">
-                Binary Search:
-                <a href="https://www.geeksforgeeks.org/binary-search/">GeeksForGeeks</a>
-            </li>
-            <li class="resources__list-item">
-                Segment Tree:
-                <a href="https://www.geeksforgeeks.org/binary-search/">CP Tutorials</a>
-            </li>
-            <li class="resources__list-item">
-                Dynamic Programming:
-                <a href="https://www.geeksforgeeks.org/binary-search/">CSES</a>
-            </li>
-            <li class="resources__list-item">
-                Basic Graph Algorithms:
-                <a href="https://www.geeksforgeeks.org/binary-search/">USACO Guide</a>
-            </li>
-            <li class="resources__list-item">
-                Advanced Graph Algorithms:
-                <a href="https://www.geeksforgeeks.org/binary-search/">CP Algorithms</a>
-            </li>
-            <li class="resources__list-item">
-                Combinatorics:
-                <a href="https://www.geeksforgeeks.org/binary-search/">Art of Problem Solving</a>
-            </li>
-        </ul>
-        <h3 class="resources__subtitle">Junior</h3>
-        <ul class="resources__list">
-            <li class="resources__list-item">
-                Asymptotic Complexity:
-                <a
-                    href="https://www.geeksforgeeks.org/knowing-the-complexity-in-competitive-programming/">GeeksForGeeks</a>
-            </li>
-            <li class="resources__list-item">
-                Binary Search:
-                <a href="https://www.geeksforgeeks.org/binary-search/">GeeksForGeeks</a>
-            </li>
-            <li class="resources__list-item">
-                Modular Arithmetic:
-                <a href="https://www.geeksforgeeks.org/binary-search/">GeeksForGeeks</a>
-            </li>
-            <li class="resources__list-item">
-                Problem Solving:
-                <a href="https://www.geeksforgeeks.org/binary-search/">Art of Problem Solving</a>
-            </li>
-            <li class="resources__list-item">
-                Constructive Algorithms:
-                <a href="https://www.geeksforgeeks.org/binary-search/">Programiz</a>
-            </li>
-            <li class="resources__list-item">
-                Implementation:
-                <a href="https://www.geeksforgeeks.org/binary-search/">Educative</a>
-            </li>
-            <li class="resources__list-item">
-                Greedy Algorithms:
-                <a href="https://www.geeksforgeeks.org/binary-search/">TutorialsPoint</a>
-            </li>
-        </ul>
-        <p class="resources__note">
-            This isn't an exhaustive list of materials available for
-            learning, but they should certainly help you get started.
-        </p>
-    </section>
-    <!-- register -->
-    <section class="register">
-        <h1 class="register__title">Register</h1>
-        <p class="register__tagline">
-            Ready to register for the first-ever Inter DPS coding
-            competition?
-        </p>
-        <p class="register__tagline">For any queries related to the competition, contact us on
-            <b>dps.it.council@gmail.com</b>
-        </p>
-        <form class="register__form">
-            <input type="text" class="register__input register__name" placeholder="Name" required />
-            <input type="email" class="register__input register__email" placeholder="Email" required />
-            <input type="phone" class="register__input register__phone" placeholder="Phone" required />
-            <select class="register__input register__branch">
-                <option selected disabled>DPS Bangalore Branch</option>
-                <option>North</option>
-                <option>South</option>
-                <option>East</option>
-                <option>Electronic City</option>
-            </select>
-            <select class="register__input register__class">
-                <option selected disabled>Class</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-            </select>
-            <input type="submit" class="register__submit" value="Register" />
-        </form>
-        <div class="register__buttons">
-            <h1>You are not done yet!</h1><br />
-            <p>
-                You have completed your first step of registration for the
-                competition. <br /><br />The next step is to register on the
-                Codingal platform from the below link. <br /><br />Also,
-                join our WhatsApp group to receive regular communications of
-                the competition.
+                We believe that this contest will enable contestants to develop
+                their problem-solving and analytical skills. Participants will
+                also develop their logic-building and time management skills,
+                and this competition will surely provide a competitive edge to
+                the students as they begin to enter these coding fests at an
+                early age.
             </p>
-            <button>Register on Codingal</button>
-            <button>Join our WhatsApp group</button>
-        </div>
-    </section>
-    <footer class="footer">
-        <h1 class="footer__title">DiPS Coding Jam</h1>
-        <h6 class="footer__date">21ST AUGUST, 2021</h6>
-        <h6 class="footer__date">Contact us on dps.it.council@gmail.com</h6>
-        <h6 class="footer__credits">Made by Avaneesh Kumar, IT Council - DPS Bangalore South</h6>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./app.js"></script>
-</body>
+        </section>
+        <!--timer-->
+        <section class="timer" id="timer">
+            <div class="timer__container">
+                <div class="timer__days">
+                    <h4 class="timer__daysn" id="days">0</h4>
+                    <h6 class="timer__daysd">Days</h6>
+                </div>
+                <div class="timer__days">
+                    <h4 class="timer__daysn" id="hours">0</h4>
+                    <h6 class="timer__daysd">Hours</h6>
+                </div>
+                <div class="timer__days">
+                    <h4 class="timer__daysn" id="minutes">0</h4>
+                    <h6 class="timer__daysd">Minutes</h6>
+                </div>
+                <div class="timer__days">
+                    <h4 class="timer__daysn" id="seconds">0</h4>
+                    <h6 class="timer__daysd">Seconds</h6>
+                </div>
+            </div>
+        </section>
+        <!-- tracks -->
+        <section class="tracks" id="guidelines">
+            <h1 class="tracks__title">Tracks</h1>
+            <div class="tracks__container">
+                <div class="tracks__track">
+                    <img
+                        class="tracks__img"
+                        src="./img/senior-track.png"
+                        alt="Senior Track"
+                    />
+                    <h1 class="tracks__track-title">Senior (Class 9 - 12)</h1>
+                    <h6 class="tracks__track-subtitle">Topics</h6>
+                    <ul class="tracks__track-list">
+                        <li class="tracks__track-list-item">
+                            Dynamic Prgramming
+                        </li>
+                        <li class="tracks__track-list-item">
+                            Graph Algorithms
+                        </li>
+                        <li class="tracks__track-list-item">
+                            Greedy Algorithms
+                        </li>
+                        <li class="tracks__track-list-item">
+                            Bitwise Manipulations
+                        </li>
+                        <li class="tracks__track-list-item">Combinatorics</li>
+                    </ul>
+                </div>
+                <div class="tracks__track">
+                    <img
+                        class="tracks__img"
+                        src="./img/junior-track.png"
+                        alt="Junior Track"
+                    />
+                    <h1 class="tracks__track-title">Junior (Class 6 - 8)</h1>
+                    <h6 class="tracks__track-subtitle">Topics</h6>
+                    <ul class="tracks__track-list">
+                        <li class="tracks__track-list-item">Implementation</li>
+                        <li class="tracks__track-list-item">Binary Search</li>
+                        <li class="tracks__track-list-item">Brute Force</li>
+                        <li class="tracks__track-list-item">
+                            Greedy Algorithms
+                        </li>
+                        <li class="tracks__track-list-item">
+                            Constructive Algorithms
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- guidelines -->
+        <section class="guidelines">
+            <h1 class="guidelines__title">Guidelines</h1>
+            <ul class="guidelines__list">
+                <li class="guidelines__list-item">
+                    The competition will be held on
+                    <a href="https://codingal.com">Codingal</a> platform.
+                </li>
+                <li class="guidelines__list-item">
+                    Time of the competition is: 11:00am to 1:00pm
+                </li>
+                <li class="guidelines__list-item">
+                    You will get <b>10 coding problems</b> to solve in 2 hours
+                    using either <b>C, C++, Java, or Python.</b>
+                </li>
 
+                <li class="guidelines__list-item">
+                    Each problem statement will have points associated with it.
+                </li>
+                <li class="guidelines__list-item">
+                    Points increase as problems get more difficult.
+                </li>
+                <li class="guidelines__list-item">
+                    The leaderboard will be updated in real-time and the student
+                    with the highest point will be the winner.
+                </li>
+
+                <li class="guidelines__list-item">
+                    This competition is for <b>DPS Bangalore schools only.</b>
+                </li>
+            </ul>
+        </section>
+        <!-- prizes -->
+        <section class="prizes" id="prizes">
+            <h1 class="prizes__title">Prizes</h1>
+            <ul class="prizes__list">
+                <li class="prizes__list-item">
+                    Winner Prize <br />
+                    <b>INR 1000 for each track</b>
+                </li>
+                <li class="prizes__list-item">
+                    1st Runner Up Prize <br />
+                    <b>INR 750 for each track</b>
+                </li>
+                <li class="prizes__list-item">
+                    2nd Runner Up Prize <br />
+                    <b>INR 500 for each track</b>
+                </li>
+            </ul>
+            <p class="prizes__certificates">
+                All participants with a score above "0" on the leaderboard will
+                get a rank certificate.
+            </p>
+        </section>
+        <!-- resources -->
+        <section class="resources" id="resources">
+            <h1 class="resources__title">Resources</h1>
+            <h3 class="resources__subtitle">Senior</h3>
+            <ul class="resources__list">
+                <li class="resources__list-item">
+                    Asymptotic Complexity:
+                    <a
+                        href="https://www.geeksforgeeks.org/knowing-the-complexity-in-competitive-programming/"
+                        >GeeksForGeeks</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Binary Search:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >GeeksForGeeks</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Segment Tree:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >CP Tutorials</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Dynamic Programming:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >CSES</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Basic Graph Algorithms:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >USACO Guide</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Advanced Graph Algorithms:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >CP Algorithms</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Combinatorics:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >Art of Problem Solving</a
+                    >
+                </li>
+            </ul>
+            <h3 class="resources__subtitle">Junior</h3>
+            <ul class="resources__list">
+                <li class="resources__list-item">
+                    Asymptotic Complexity:
+                    <a
+                        href="https://www.geeksforgeeks.org/knowing-the-complexity-in-competitive-programming/"
+                        >GeeksForGeeks</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Binary Search:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >GeeksForGeeks</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Modular Arithmetic:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >GeeksForGeeks</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Problem Solving:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >Art of Problem Solving</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Constructive Algorithms:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >Programiz</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Implementation:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >Educative</a
+                    >
+                </li>
+                <li class="resources__list-item">
+                    Greedy Algorithms:
+                    <a href="https://www.geeksforgeeks.org/binary-search/"
+                        >TutorialsPoint</a
+                    >
+                </li>
+            </ul>
+            <p class="resources__note">
+                This isn't an exhaustive list of materials available for
+                learning, but they should certainly help you get started.
+            </p>
+        </section>
+        <!-- register -->
+        <section class="register" id="register">
+            <h1 class="register__title">Register</h1>
+            <p class="register__tagline">
+                Ready to register for the first-ever Inter DPS coding
+                competition?
+            </p>
+            <p class="register__tagline">
+                For any queries related to the competition, contact us on
+                <b>dps.it.council@gmail.com</b>
+            </p>
+            <form class="register__form">
+                <input
+                    type="text"
+                    class="register__input register__name"
+                    placeholder="Name"
+                    required
+                />
+                <input
+                    type="email"
+                    class="register__input register__email"
+                    placeholder="Email"
+                    required
+                />
+                <input
+                    type="phone"
+                    class="register__input register__phone"
+                    placeholder="Phone"
+                    required
+                />
+                <select class="register__input register__branch">
+                    <option selected disabled>DPS Bangalore Branch</option>
+                    <option>North</option>
+                    <option>South</option>
+                    <option>East</option>
+                    <option>Electronic City</option>
+                </select>
+                <select class="register__input register__class">
+                    <option selected disabled>Class</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <input
+                    type="submit"
+                    class="register__submit"
+                    value="Register"
+                />
+            </form>
+            <div class="register__buttons">
+                <h1>You are not done yet!</h1>
+                <br />
+                <p>
+                    You have completed your first step of registration for the
+                    competition. <br /><br />The next step is to register on the
+                    Codingal platform from the below link. <br /><br />Also,
+                    join our WhatsApp group to receive regular communications of
+                    the competition.
+                </p>
+                <button>Register on Codingal</button>
+                <button>Join our WhatsApp group</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <h1 class="footer__title">DiPS Coding Jam</h1>
+            <h6 class="footer__date">21ST AUGUST, 2021</h6>
+            <h6 class="footer__date">Contact us on dps.it.council@gmail.com</h6>
+            <h6 class="footer__credits">
+                Made by Avaneesh Kumar, IT Council - DPS Bangalore South
+            </h6>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="./app.js"></script>
+    </body>
 </html>
