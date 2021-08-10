@@ -203,14 +203,11 @@ gsap.timeline().from('.about', {
         trigger: '.about',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: true,
-        markers: true,
+        scrub: 1
     },
     x: '100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
 gsap.timeline().from('.timer', {
@@ -218,13 +215,11 @@ gsap.timeline().from('.timer', {
         trigger: '.timer',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: true,
+        scrub: 1,
     },
     x: '-100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
 gsap.timeline().to('#title', {
@@ -280,13 +275,11 @@ gsap.timeline().from('#senior', {
         trigger: '.tracks',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: true,
+        scrub: 1,
     },
     x: '-200%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
 gsap.timeline().from('#junior', {
@@ -294,13 +287,11 @@ gsap.timeline().from('#junior', {
         trigger: '.tracks',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: true,
+        scrub: 1,
     },
     x: '200%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
 gsap.timeline().from('.guidelines', {
@@ -308,13 +299,11 @@ gsap.timeline().from('.guidelines', {
         trigger: '.guidelines',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: true,
+        scrub: 1
     },
     x: '-100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
 
 gsap.timeline().from('.prizes', {
@@ -322,11 +311,9 @@ gsap.timeline().from('.prizes', {
         trigger: '.prizes',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: true,
+        scrub: 1
     },
     x: '100%',
     opacity: 0,
     duration: 4,
-    scrub: true,
-    markers: true,
 })
