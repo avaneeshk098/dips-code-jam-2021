@@ -203,11 +203,7 @@ gsap.from('.about', {
         trigger: '.about',
         start: 'top bottom',
         end: 'bottom bottom',
-<<<<<<< HEAD
         scrub: true,
-=======
-        scrub: 1
->>>>>>> c6de3652b5beebc521af42f8b34c3a8a7580a76d
     },
     x: '100%',
     opacity: 0,
@@ -303,7 +299,7 @@ gsap.from('.guidelines', {
         trigger: '.guidelines',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: 1
+        scrub: 1,
     },
     x: '-100%',
     opacity: 0,
@@ -315,7 +311,7 @@ gsap.from('.prizes', {
         trigger: '.prizes',
         start: 'top bottom',
         end: 'bottom bottom',
-        scrub: 1
+        scrub: 1,
     },
     x: '100%',
     opacity: 0,
