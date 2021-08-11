@@ -117,6 +117,7 @@ document.querySelector('.register__form').addEventListener('submit', e => {
     let phone = document.querySelector('.register__phone').value
     let branch = document.querySelector('.register__branch').value
     let grade = document.querySelector('.register__class').value
+    let adm_no = document.querySelector('.register__adm').value
     if (email === '') {
         alert('Email field is empty. Kindly fill and resubmit the form')
         return false
@@ -129,7 +130,7 @@ document.querySelector('.register__form').addEventListener('submit', e => {
         alert('Phone field is empty. Kindly fill and resubmit the form')
         return false
     }
-    if (phone.length < 10 || phone.length > 14) {
+    if (phone.length != 10) {
         alert('Phone number is not valid. Kindly fill and resubmit the form')
         return false
     }
@@ -145,6 +146,10 @@ document.querySelector('.register__form').addEventListener('submit', e => {
         )
         return false
     }
+    if (adm_no == ''){
+        alert('Admission number field is empty. Kindly fill and resubmit the form')
+        return false
+    }
     fetch('https://it-council-api1.herokuapp.com/codingRegistration', {
         method: 'POST',
         headers: {
@@ -156,6 +161,7 @@ document.querySelector('.register__form').addEventListener('submit', e => {
             phone: phone,
             class: grade,
             branch: branch,
+            adm_no: adm_no
         }),
     })
         .then(response => {
@@ -188,6 +194,7 @@ document.querySelector('.register__form').addEventListener('submit', e => {
                             phone: phone,
                             class: grade,
                             branch: branch,
+                            adm_no: adm_no
                         }),
                     },
                 )
