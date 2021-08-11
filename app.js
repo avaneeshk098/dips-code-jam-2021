@@ -100,6 +100,14 @@ window.onload = () => {
         document.querySelector('.register__buttons').style.display = 'block'
         document.querySelector('.register__form').style.display = 'none'
     }
+    if(localStorage.getItem('level') === 'senior'){
+        document.getElementById('codingal-register').href = "https://www.codingal.com/competitions/dips-coding-jam-21/"
+        document.getElementById('whatsapp-join').href = "https://chat.whatsapp.com/FgiBNzVUYtzGFEVzdPy6gW"
+    }
+    else{
+        document.getElementById('codingal-register').href = "https://www.codingal.com/competitions/dips-coding-jam-2021/"
+        document.getElementById('whatsapp-join').href = "https://chat.whatsapp.com/Dv6DiPeG1E9H0hyIGOhVcS"
+    }
 }
 
 document.querySelector('.register__form').addEventListener('submit', e => {
@@ -153,6 +161,16 @@ document.querySelector('.register__form').addEventListener('submit', e => {
         .then(response => {
             if (response.status === 200) {
                 localStorage.setItem('filled', 'true')
+                if(Number(grade) > 8){
+                    localStorage.setItem('level', 'senior')  
+                    document.getElementById('codingal-register').href = "https://www.codingal.com/competitions/dips-coding-jam-21/"
+                    document.getElementById('whatsapp-join').href = "https://chat.whatsapp.com/FgiBNzVUYtzGFEVzdPy6gW"
+                }
+                else{
+                    localStorage.setItem('level', 'junior')
+                    document.getElementById('codingal-register').href = "https://www.codingal.com/competitions/dips-coding-jam-2021/"
+                    document.getElementById('whatsapp-join').href = "https://chat.whatsapp.com/Dv6DiPeG1E9H0hyIGOhVcS"
+                }
                 document.querySelector('.register__buttons').style.display =
                     'block'
                 document.querySelector('.register__form').style.display = 'none'
