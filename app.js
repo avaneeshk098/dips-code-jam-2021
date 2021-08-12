@@ -69,7 +69,7 @@ particlesJS('particles-js', {
 
 // timer
 let currDate = new Date()
-let eventDate = new Date(2021, 7, 21, 10, 0, 0)
+let eventDate = new Date(2021, 7, 21, 11, 0, 0)
 setInterval(() => {
     currDate = new Date()
     let delta = eventDate.getTime() - currDate.getTime()
